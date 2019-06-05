@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>todo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+  </head>
+  <body>
+    <div class="intro">
+        <p class="principal">
+            todo<strong>List</strong>
+          </p>
+        <p class="secondary">A simple todo list app built with node</p>
+    </div>
+    <div class="content">
+          <input class="task-input" type="text" id="task"  placeholder="Insert your task here..."><br>
+          <hr>
+        <ul class="todos">
+          
+          <%  todos.forEach(function(todo) { %>
+            <%if (!todo.completed) { %>
+            <li ondblclick="doneTask(id)" id=<%= todo._id %>>
+                    <%= todo.name %>
+                    <a onclick= "deleteTask(id)" id=<%= todo._id %>>X</a>
+            </li>
+            <% } else { %>
+              <li class="deleted" ondblclick="doneTask(id)" id=<%= todo._id %>>
+                  <%= todo.name %>
+                  <a onclick= "deleteTask(id)" id=<%= todo._id %>>X</a>
+          </li>
+              <% } %>
+        <% }) %>
+
+          </ul>
+    </div>
+    
+  </body>
+  <script src="/javascripts/request.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>

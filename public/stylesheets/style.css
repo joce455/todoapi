@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E7EEEE;
+  cursor: pointer;
+}
+
+a {
+  color: #00B7FF;
+}
+.intro{
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+.principal{
+  color:black;
+  margin: auto;
+  font-size:50px;
+}
+.secondary{
+  color: #BEC4C9;
+}
+
+.content{
+  margin: auto;
+  width: 60%;
+}
+.task-input{
+  width: 100%;
+  border: none;
+  padding-left: 15px;
+border-color: transparent;
+background-color:  #E7EEEE;
+font-size: 18px;
+}
+.task-input:hover{
+  outline: none;
+}
+.todos{
+  padding-left: 15px;
+}
+li{
+  color: #37434D;
+  font-size: 15px;
+  padding: 0px;
+}
+li:hover{
+  background-color:   rgba(194, 206, 206, 0.877);
+  
+}
+.deleted{
+  text-decoration: line-through;
+}
+a{
+  display: inline-block;
+  padding-left: 10px;
+  color:black;
+}
+
+
